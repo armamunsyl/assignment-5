@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <title>Emergency Service</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Service</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <nav>
+<body class="bg-gray-100">
+<nav class="flex justify-between items-center bg-white px-6 py-3 shadow">
+  <div class="flex items-center space-x-2">
+    <img src="assets/logo.png" alt="Logo" class="w-8 h-8">
     <div>
-        <div class="flex">
-        <img src="assets/logo-dark.png" alt="">
-        <h1>Emergency Service</h1>
-     </div>
+        <span class="text-xl font-bold text-green-600">Emergency</span><br>
+    <span class="text-xl font-bold text-green-600 ">Service</span>
     </div>
-     <div>
-        <div>
-            <p>0</p>
-            <img src="assets/heart.png" alt="">
-        </div>
-        <div>
-            <p>100</p>
-            <img src="assets/coin.png" alt="">
-        </div>
-        <div>
+  </div>
+  <div class="flex items-center space-x-3">
+    <div class="flex items-center space-x-1 bg-green-50 px-3 py-1 rounded-full">
+      <span id="heartCount" class="font-semibold">0</span>
+      <i class="fa-solid fa-heart text-red-500"></i>
+    </div>
+    <div class="flex items-center space-x-1 bg-green-50 px-3 py-1 rounded-full">
+      <span id="coinCount" class="font-semibold">100</span>
+      <img src="assets/coin.png" alt="coin" class="w-5 h-5">
+    </div>
+  <div class="bg-green-600 text-white px-4 py-1 rounded-full font-semibold flex items-center justify-center space-x-1">
+  <span id="copyCount">0</span>
+  <span>Copy</span>
+  </div>
+  </div>
+</nav>
 
-        </div>
-     </div>
-    </nav>
+
+
+
 </body>
 </html>
